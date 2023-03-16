@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+main{
+    background: url(imagens/Background.jpg) no-repeat center/cover ;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+section{
+    border-radius: 1rem;
+    background-color: #6D67D0;
+    backdrop-filter: blur(1rem);
+}
+.temperature{
+    background: url(imagens/Temperature\ Now\ \(1\).jpg) no-repeat center;
+    height: 48rem;
+    width: 48rem;
+    position: relative;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
+.temperature::before{
+    content: "";
+    width: 17.6rem;
+    height: 17.6rem;
+    background: url(imagens/weather.svg)no-repeat;
+    position:absolute ;
+    top:-5.6rem;
+    left: -5.6rem;
+}
+.location{
+   justify-content: flex-end;
+   display: flex;
+   padding: 3.2rem 3.2rem 0;
+   align-items: center;
+   gap: 0.4rem;
+    
+}
+
