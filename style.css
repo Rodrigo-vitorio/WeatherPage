@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;}
 :root{
     font-size: 62.5%;
 }
@@ -44,5 +46,69 @@ section{
    align-items: center;
    gap: 0.4rem;
     
+}
+.location span{
+font-style: normal;
+font-size: 14px;
+line-height: 17px;
+color: #C2BFF4;
+}
+.temp{
+    margin: 6rem;
+
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    
+}
+.temp .number{
+text-align: center;
+font-size: 8.8rem;
+color: #FFFFFF;
+
+display: flex;
+flex-direction: column;
+gap: 0.4rem;
+
+}
+.temp .number .maxmin {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.temp .number .maxmin span{
+    color: #C2BFF4;
+}
+.celsius{
+    color: #DAD8F7;
+    font-size: 2.4rem;
+    margin-top: 1.4rem;
+}
+.statistics{
+    padding: 1.2rem;
+    display: flex;
+    gap: 0.8rem;
+}
+.stats{
+    flex: 1 ;
+
+    padding:  1.2rem 1.6rem;
+    background: rgba(102, 96, 200, 0.6);
+    border-radius: 6px;
+
+     display: flex;
+    gap: 1.2rem;
+     align-items: center;
+}
+.statistics .stats .info {
+    font-size: 12px;
+    color: #E7E6FB;
+}
+.statistics .stats .info h5{
+    font-size: 18px;
+}
+.statistics .stats .info h5 span{
+    font-size: 14px;
 }
 
