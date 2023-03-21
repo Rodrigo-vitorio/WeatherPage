@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;}
+    
 :root{
     font-size: 62.5%;
 }
@@ -15,6 +16,7 @@ main{
     min-height: 100vh;
     display: grid;
     place-content: center;
+    gap: 2.4rem;
 }
 
 section{
@@ -110,5 +112,57 @@ gap: 0.4rem;
 }
 .statistics .stats .info h5 span{
     font-size: 14px;
+}
+/* Daqui pra cima é relacionado a primeira section*/
+
+.air-quality{
+    text-align: center;
+    display: grid;
+    font-weight: 700;
+    
+}
+h2.title{
+    color: #DAD8F7;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.8rem;
+    
+    margin-top:3.2rem ;
+    font-size: 16px;  
+}
+.air-quality .good{
+margin-top: 3.2rem;  
+font-size: 18px;
+color: #87EBCD;
+}
+.air-quality .number{
+font-size: 40px;
+margin-top: 0.4rem;
+color: #E7E6FB;
+}
+.air-quality .info{  
+    display: flex;
+    gap:1.6rem ;
+    justify-content:center;
+    margin-top: 3.5rem;
+    margin-bottom: 1.4rem;
+    padding: 1.8rem 1.8rem 0;
+
+}
+.air-quality .info .number{
+    display: grid;
+  flex: 1;
+    font-size: 14px;
+
+color: #87EBCD;
+}
+.air-quality .info .number span{
+font-weight: 400;
+font-size: 12px;
+
+
+color: #E7E6FB;
 }
 
