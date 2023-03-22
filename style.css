@@ -17,6 +17,7 @@ main{
     display: grid;
     place-content: center;
     gap: 2.4rem;
+    padding: 6.4rem;
 }
 
 section{
@@ -148,7 +149,7 @@ color: #E7E6FB;
     justify-content:center;
     margin-top: 3.5rem;
     margin-bottom: 1.4rem;
-    padding: 1.8rem 1.8rem 0;
+    padding: 0 1.8rem 1.8rem ;
 
 }
 .air-quality .info .number{
