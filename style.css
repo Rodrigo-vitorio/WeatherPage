@@ -1,31 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-*{
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;}
-    
-:root{
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
     font-size: 62.5%;
 }
-body{
+
+body {
     font-size: 1.6rem;
+    
 }
-main{
-    background: url(imagens/Background.jpg) no-repeat center/cover ;
+
+main {
+    background: url(imagens/Background.jpg) no-repeat center/cover;
     min-height: 100vh;
     display: grid;
     place-content: center;
     gap: 2.4rem;
     padding: 6.4rem;
+    
 }
 
-section{
+section {
     border-radius: 1rem;
     background-color: #6D67D0;
     backdrop-filter: blur(1rem);
 }
-.temperature{
+
+.temperature {
     background: url(imagens/Temperature\ Now\ \(1\).jpg) no-repeat center;
     height: 48rem;
     width: 48rem;
@@ -33,137 +41,288 @@ section{
     display: grid;
     grid-template-rows: max-content 1fr max-content;
 }
-.temperature::before{
+
+.temperature::before {
     content: "";
     width: 17.6rem;
     height: 17.6rem;
     background: url(imagens/weather.svg)no-repeat;
-    position:absolute ;
-    top:-5.6rem;
+    position: absolute;
+    top: -5.6rem;
     left: -5.6rem;
 }
-.location{
-   justify-content: flex-end;
-   display: flex;
-   padding: 3.2rem 3.2rem 0;
-   align-items: center;
-   gap: 0.4rem;
-    
+
+.location {
+    justify-content: flex-end;
+    display: flex;
+    padding: 3.2rem 3.2rem 0;
+    align-items: center;
+    gap: 0.4rem;
+
 }
-.location span{
-font-style: normal;
-font-size: 14px;
-line-height: 17px;
-color: #C2BFF4;
+
+.location span {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C2BFF4;
 }
-.temp{
+
+.temp {
     margin: 6rem;
 
     font-weight: 700;
-    
+
     display: flex;
     justify-content: center;
     gap: 0.4rem;
-    
-}
-.temp .number{
-text-align: center;
-font-size: 8.8rem;
-color: #FFFFFF;
-
-display: flex;
-flex-direction: column;
-gap: 0.4rem;
 
 }
+
+.temp .number {
+    text-align: center;
+    font-size: 8.8rem;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+}
+
 .temp .number .maxmin {
     font-size: 20px;
     color: #FFFFFF;
 }
-.temp .number .maxmin span{
+
+.temp .number .maxmin span {
     color: #C2BFF4;
 }
-.celsius{
+
+.celsius {
     color: #DAD8F7;
     font-size: 2.4rem;
     margin-top: 1.4rem;
 }
-.statistics{
+
+.statistics {
     padding: 1.2rem;
     display: flex;
     gap: 0.8rem;
 }
-.stats{
-    flex: 1 ;
 
-    padding:  1.2rem 1.6rem;
+.stats {
+    flex: 1;
+
+    padding: 1.2rem 1.6rem;
     background: rgba(102, 96, 200, 0.6);
     border-radius: 6px;
 
-     display: flex;
+    display: flex;
     gap: 1.2rem;
-     align-items: center;
+    align-items: center;
 }
+
 .statistics .stats .info {
     font-size: 12px;
     color: #E7E6FB;
 }
-.statistics .stats .info h5{
+
+.statistics .stats .info h5 {
     font-size: 18px;
 }
-.statistics .stats .info h5 span{
+
+.statistics .stats .info h5 span {
     font-size: 14px;
 }
+
 /* Daqui pra cima é relacionado a primeira section*/
 
-.air-quality{
+.air-quality {
     text-align: center;
     display: grid;
     font-weight: 700;
-    
+
 }
-h2.title{
+
+h2.title {
     color: #DAD8F7;
-   
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:0.8rem;
-    
-    margin-top:3.2rem ;
-    font-size: 16px;  
+    gap: 0.8rem;
+
+    margin-top: 3.2rem;
+    font-size: 16px;
 }
-.air-quality .good{
-margin-top: 3.2rem;  
-font-size: 18px;
-color: #87EBCD;
+
+.air-quality .good {
+    margin-top: 3.2rem;
+    font-size: 18px;
+    color: #87EBCD;
 }
-.air-quality .number{
-font-size: 40px;
-margin-top: 0.4rem;
-color: #E7E6FB;
+
+.air-quality .number {
+    font-size: 40px;
+    margin-top: 0.4rem;
+    color: #E7E6FB;
 }
-.air-quality .info{  
+
+.air-quality .info {
     display: flex;
-    gap:1.6rem ;
-    justify-content:center;
+    gap: 1.6rem;
+    justify-content: center;
     margin-top: 3.5rem;
     margin-bottom: 1.4rem;
-    padding: 0 1.8rem 1.8rem ;
+    padding: 0 1.8rem 1.8rem;
 
 }
-.air-quality .info .number{
+
+.air-quality .info .number {
     display: grid;
-  flex: 1;
+    flex: 1;
     font-size: 14px;
 
-color: #87EBCD;
-}
-.air-quality .info .number span{
-font-weight: 400;
-font-size: 12px;
-
-
-color: #E7E6FB;
+    color: #87EBCD;
 }
 
+.air-quality .info .number span {
+    font-weight: 400;
+    font-size: 12px;
+
+    color: #E7E6FB;
+}
+
+.sun-chart-wrapper {
+    margin-top: 4rem;
+    height: 11rem;
+    position: relative;
+
+}
+
+.sun-chart {
+    --pos-x: 68;
+    margin: auto;
+    height: 21.6rem;
+    width: 21.6rem;
+
+    position: relative;
+}
+
+.sun-chart::before {
+    content: '';
+    height: 1.2rem;
+    width: 1.2rem;
+    background: #F6C833;
+    border-radius: 50%;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.6rem;
+
+    transform: rotate(calc(1deg * (((100 - var(--pos-x))/-100)*180)))translate(10.6rem);
+}
+
+.chart {
+    width: 21.6rem;
+    height: 10.8rem;
+    overflow: hidden;
+}
+
+.chart::before {
+    content: "";
+    height: 21.6rem;
+    width: 21.6rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(251, 219, 96, 0.2) 0%, rgba(251, 219, 96, 0) 101.89%);
+    display: block;
+    --mask: linear-gradient(0deg, white 50%, transparent 0%);
+    mask: var(--mask);
+    -webkit-mask: var(--mask);
+
+    rotate: calc(1.8deg * var(--pos-x));
+
+}
+
+.chart img {
+    position: absolute;
+    top: 0;
+    left: 1%;
+}
+
+time.now {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.time {
+    font-size: 1.6rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 27.6rem;
+    margin: 0.8rem auto;
+    padding: 0 1.6rem 1.6rem;
+}
+
+.week-weather {
+    display: flex;
+    gap: 1.2rem;
+    padding: 4.0rem;
+    justify-content: center;
+
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.week-weather .dia {
+    font-weight: 700;
+    font-size: 14px;
+    color: #DAD8F7;
+}
+
+.week-weather .number {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.week-weather .number span {
+    font-weight: 700;
+    font-size: 16px;
+    color: #C2BFF4;
+}
+@media (max-width: 1200px){
+    main{
+        grid-template-columns: 48rem 27.7rem 27.7rem;
+        grid-template-rows: 24.4rem 21.2rem;
+       
+    }
+    
+}
+
+.temperature{
+    grid-row: 1/3;
+}
+.week-weather{
+    grid-column: 2/4;
+}
